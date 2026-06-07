@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistant RH Uniqlo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --uq-red:#E40521;
+  --uq-red-dark:#B8001A;
+  --uq-red-light:#FFF0F0;
+  --uq-black:#1A1A1A;
+  --uq-sidebar:#4A4A4A;
+  --uq-sidebar-hover:#555555;
+  --uq-sidebar-active:#606060;
+  --uq-sidebar-border:#5a5a5a;
+  --uq-sidebar-section:#888;
+  --uq-gray:#F5F5F5;
+  --uq-gray2:#E8E8E8;
+  --uq-gray3:#999;
+  --uq-white:#FFFFFF;
+}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#f0f0f0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+.shell{display:flex;height:680px;width:900px;max-width:100%;border:1px solid var(--uq-gray2);background:var(--uq-white);box-shadow:0 4px 24px rgba(0,0,0,0.08);}
+.sidebar{width:220px;flex-shrink:0;background:var(--uq-sidebar);display:flex;flex-direction:column;}
+.sb-logo{padding:18px 18px 14px;border-bottom:1px solid var(--uq-sidebar-border);display:flex;flex-direction:column;align-items:flex-start;gap:10px;}
+.logo-svg{display:block;}
+.logo-sub{font-size:9px;color:rgba(255,255,255,0.45);letter-spacing:0.18em;text-transform:uppercase;}
+.sb-nav{flex:1;padding:14px 0;overflow-y:auto;}
+.nav-section{padding:10px 18px 4px;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--uq-sidebar-section);}
+.nav-btn{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:12px;color:rgba(255,255,255,0.65);background:none;border:none;cursor:pointer;width:100%;text-align:left;transition:all 0.1s;border-left:2px solid transparent;}
+.nav-btn:hover{color:var(--uq-white);background:var(--uq-sidebar-hover);}
+.nav-btn.active{color:var(--uq-white);background:var(--uq-sidebar-active);border-left-color:var(--uq-red);}
+.nav-btn i{font-size:14px;flex-shrink:0;}
+.sb-foot{padding:14px 18px;border-top:1px solid var(--uq-sidebar-border);}
+.user-row{display:flex;align-items:center;gap:10px;}
+.uavatar{width:30px;height:30px;border-radius:50%;background:var(--uq-red);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:white;flex-shrink:0;}
+.uname{font-size:12px;color:var(--uq-white);font-weight:500;}
+.urole{font-size:10px;color:rgba(255,255,255,0.4);}
+.chat-main{flex:1;display:flex;flex-direction:column;min-width:0;}
+.chat-head{padding:14px 20px;border-bottom:1px solid var(--uq-gray2);display:flex;align-items:center;justify-content:space-between;}
+.head-left{display:flex;align-items:center;gap:12px;}
+.bot-icon{width:36px;height:36px;background:var(--uq-red);display:flex;align-items:center;justify-content:center;color:white;font-size:18px;flex-shrink:0;}
+.bot-title{font-size:14px;font-weight:700;color:var(--uq-black);letter-spacing:-0.2px;}
+.bot-stat{font-size:11px;color:var(--uq-gray3);display:flex;align-items:center;gap:5px;margin-top:2px;}
+.dot-on{width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block;}
+.badge-kb{font-size:10px;padding:4px 10px;background:var(--uq-gray);color:var(--uq-gray3);letter-spacing:0.04em;}
+.msgs{flex:1;overflow-y:auto;padding:16px 20px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth;}
+.msg{display:flex;gap:10px;max-width:88%;}
+.msg.user{align-self:flex-end;flex-direction:row-reverse;}
+.msg.bot{align-self:flex-start;}
+.mavatar{width:28px;height:28px;flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+.mavatar.b{background:var(--uq-red);color:white;}
+.mavatar.u{background:var(--uq-black);color:white;font-weight:700;font-size:10px;}
+.bub{padding:10px 14px;font-size:13px;line-height:1.6;color:var(--uq-black);}
+.bot .bub{background:var(--uq-gray);border-left:3px solid var(--uq-red);}
+.user .bub{background:var(--uq-black);color:white;}
+.bub ul{margin:6px 0 0 14px;}
+.bub li{margin-bottom:4px;}
+.bub strong{font-weight:700;}
+.ts{font-size:10px;color:var(--uq-gray3);text-align:center;letter-spacing:0.06em;text-transform:uppercase;}
+.typing{display:flex;gap:4px;align-items:center;padding:2px 0;}
+.typing span{width:6px;height:6px;background:var(--uq-gray3);animation:bonce 1.2s infinite;}
+.typing span:nth-child(2){animation-delay:.2s;}
+.typing span:nth-child(3){animation-delay:.4s;}
+@keyframes bonce{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-6px);}}
+.input-wrap{padding:12px 16px;border-top:1px solid var(--uq-gray2);}
+.chips{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px;}
+.chip{font-size:11px;padding:5px 11px;background:var(--uq-white);border:1px solid var(--uq-gray2);color:var(--uq-black);cursor:pointer;letter-spacing:0.02em;transition:all 0.1s;}
+.chip:hover{border-color:var(--uq-red);color:var(--uq-red);}
+.irow{display:flex;gap:8px;align-items:flex-end;}
+textarea{flex:1;resize:none;min-height:40px;max-height:90px;font-size:13px;font-family:inherit;padding:10px 13px;border:1px solid var(--uq-gray2);background:var(--uq-white);color:var(--uq-black);outline:none;line-height:1.45;border-radius:0;}
+textarea:focus{border-color:var(--uq-red);}
+textarea::placeholder{color:var(--uq-gray3);}
+.sbtn{width:40px;height:40px;background:var(--uq-red);border:none;cursor:pointer;color:white;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;transition:background 0.1s;}
+.sbtn:hover{background:var(--uq-red-dark);}
+.sbtn:disabled{background:var(--uq-gray2);color:var(--uq-gray3);cursor:default;}
+.cat-tag{display:inline-block;font-size:10px;padding:2px 7px;background:var(--uq-red-light);color:var(--uq-red);font-weight:700;letter-spacing:0.06em;margin-bottom:5px;text-transform:uppercase;}
+.suggest-box{display:none;flex-direction:column;gap:4px;margin-bottom:8px;padding:8px 10px;border:1px solid var(--uq-red-light);background:#fffafa;}
+.suggest-box.visible{display:flex;}
+.suggest-label{font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--uq-gray3);margin-bottom:2px;}
+.suggest-item{display:flex;align-items:center;gap:7px;padding:5px 8px;font-size:12px;color:var(--uq-black);cursor:pointer;border:1px solid var(--uq-gray2);background:var(--uq-white);text-align:left;transition:all 0.1s;}
+.suggest-item:hover{border-color:var(--uq-red);color:var(--uq-red);background:var(--uq-red-light);}
+.suggest-item i{font-size:12px;color:var(--uq-red);flex-shrink:0;}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sb-logo">
+      <svg width="116" height="30" viewBox="0 0 116 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Uniqlo" style="display:block">
+        <rect width="116" height="30" fill="#E40521"/>
+        <text x="58" y="21" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="white" letter-spacing="3.5">UNIQLO</text>
+      </svg>
+      <div class="logo-sub">RH Assistant</div>
+    </div>
+    <nav class="sb-nav">
+      <div class="nav-section">Thèmes</div>
+      <button class="nav-btn active" onclick="setTopic('general',this)"><i class="ti ti-message-circle"></i>Général</button>
+      <button class="nav-btn" onclick="setTopic('conge',this)"><i class="ti ti-beach"></i>Congés & Absences</button>
+      <button class="nav-btn" onclick="setTopic('paie',this)"><i class="ti ti-receipt"></i>Fiche de paie</button>
+      <button class="nav-btn" onclick="setTopic('contrat',this)"><i class="ti ti-file-text"></i>Contrat & Statut</button>
+      <button class="nav-btn" onclick="setTopic('formation',this)"><i class="ti ti-school"></i>Formation & CPF</button>
+      <button class="nav-btn" onclick="setTopic('mutuelle',this)"><i class="ti ti-heart-rate-monitor"></i>Mutuelle & Prévoyance</button>
+      <button class="nav-btn" onclick="setTopic('epargne',this)"><i class="ti ti-pig-money"></i>Épargne salariale</button>
+    </nav>
+    <div class="sb-foot">
+      <div class="user-row">
+        <div class="uavatar">RH</div>
+        <div><div class="uname">Équipe RH</div><div class="urole">Uniqlo France</div></div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="chat-main">
+    <div class="chat-head">
+      <div class="head-left">
+        <div class="bot-icon"><i class="ti ti-robot"></i></div>
+        <div>
+          <div class="bot-title">Assistant RH Uniqlo</div>
+          <div class="bot-stat"><span class="dot-on"></span> En ligne · Réponse immédiate</div>
+        </div>
+      </div>
+      <div class="badge-kb">100 Q&amp;R · Droit du travail FR</div>
+    </div>
+
+    <div class="msgs" id="msgs">
+      <div class="ts">Aujourd'hui</div>
+      <div class="msg bot">
+        <div class="mavatar b"><i class="ti ti-robot"></i></div>
+        <div>
+          <div class="cat-tag">Bienvenue</div>
+          <div class="bub">Bonjour, je suis l'assistant RH <strong>Uniqlo France</strong>.<br><br>
+Comment puis-je vous aider ?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-wrap">
+      <div class="suggest-box" id="suggest-box">
+        <div class="suggest-label">Questions suggérées</div>
+        <button class="suggest-item" id="sug0" onclick="useSuggest(0)"><i class="ti ti-arrow-right"></i><span></span></button>
+        <button class="suggest-item" id="sug1" onclick="useSuggest(1)"><i class="ti ti-arrow-right"></i><span></span></button>
+        <button class="suggest-item" id="sug2" onclick="useSuggest(2)"><i class="ti ti-arrow-right"></i><span></span></button>
+      </div>
+      <div class="chips" id="chips">
+        <button class="chip" onclick="useChip(this)">Mon solde de congés</button>
+        <button class="chip" onclick="useChip(this)">Lire ma fiche de paie</button>
+        <button class="chip" onclick="useChip(this)">Arrêt maladie</button>
+        <button class="chip" onclick="useChip(this)">Rupture conventionnelle</button>
+        <button class="chip" onclick="useChip(this)">Mon CPF</button>
+      </div>
+      <div class="irow">
+        <textarea id="inp" placeholder="Posez votre question RH ou paie…" rows="1"
+          onkeydown="hkey(event)" oninput="aResize(this);onInput(this.value)"></textarea>
+        <button class="sbtn" id="sbtn" onclick="sendMsg()" aria-label="Envoyer"><i class="ti ti-send"></i></button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+const CHIPS = {
+  general:['Mon solde de congés','Lire ma fiche de paie','Arrêt maladie','Rupture conventionnelle','Mon CPF'],
+  conge:['Calcul des CP','RTT chez Uniqlo','Congé maternité','Congé sans solde','Absence non justifiée'],
+  paie:['Net imposable','Heures supplémentaires','Prime ancienneté','Cotisations retraite','SMIC 2024'],
+  contrat:['Période d\'essai','Clause de non-concurrence','Avenant au contrat','Démission','Préavis'],
+  formation:['Utiliser mon CPF','Plan de formation','Bilan de compétences','VAE','Entretien professionnel'],
+  mutuelle:['Adhésion mutuelle','Remboursements soins','Portabilité mutuelle','Prévoyance décès','Arrêt longue durée'],
+  disciplinaire:['Avertissement écrit','Mise à pied','Licenciement faute grave','Entretien préalable','Délais légaux'],
+  epargne:['PEE Uniqlo','Intéressement','Participation','Déblocage anticipé','PERCOL']
+};
+
+let KB = [];
+fetch('faq.json')
+  .then(r => r.json())
+  .then(data => { KB = data; console.log('FAQ chargée : ' + KB.length + ' entrées'); })
+  .catch(e => console.warn('Impossible de charger faq.json, base locale vide.', e));
+
+function findAnswer(q) {
+  const ql = q.toLowerCase();
+  let best = null, bestScore = 0;
+  for (const item of KB) {
+    const kl = item.q.toLowerCase();
+    const words = ql.split(/\s+/).filter(w => w.length > 3);
+    let score = 0;
+    for (const w of words) if (kl.includes(w)) score++;
+    if (score > bestScore) { bestScore = score; best = item; }
+  }
+  return bestScore >= 1 ? best : null;
+}
+
+let loading = false;
+const history = [];
+
+const SYSPROMPT = `Tu es l'assistant RH officiel d'Uniqlo France. Tu réponds en français, avec un ton professionnel et bienveillant, adapté à la culture Uniqlo (efficacité, simplicité, respect).
+
+Tu as accès à une base de 100 questions/réponses RH & Paie. Utilise-les pour donner des réponses précises. Si la question ne correspond pas exactement, adapte la réponse la plus proche ou réponds avec tes connaissances en droit du travail français.
+
+Contexte entreprise : Uniqlo France est une enseigne japonaise de prêt-à-porter, filiale de Fast Retailing. Les collaborateurs sont principalement des vendeurs et responsables de magasin sous convention collective du commerce de détail.
+
+Règles :
+- Réponds toujours en français
+- Sois précis et cite les articles de loi si pertinent
+- Indique clairement quand une consultation RH humaine est recommandée
+- Formate avec des listes quand c'est lisible
+- Ne divulgue pas de données personnelles d'autres collaborateurs`;
+
+function setTopic(t, btn) {
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const c = CHIPS[t] || CHIPS.general;
+  document.getElementById('chips').innerHTML = c.map(x => `<button class="chip" onclick="useChip(this)">${x}</button>`).join('');
+}
+
+function useChip(btn) {
+  document.getElementById('inp').value = btn.textContent;
+  sendMsg();
+}
+
+function aResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 90) + 'px';
+}
+
+function hkey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
+}
+
+function esc(t) {
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function fmt(t) {
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/^- (.+)$/gm,'<li>$1</li>')
+    .replace(/(<li>.*<\/li>\n?)+/g,'<ul>$&</ul>')
+    .replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
+}
+
+function addMsg(role, html, cat) {
+  const msgs = document.getElementById('msgs');
+  const d = document.createElement('div');
+  d.className = `msg ${role}`;
+  const av = role === 'bot'
+    ? `<div class="mavatar b"><i class="ti ti-robot"></i></div>`
+    : `<div class="mavatar u">ML</div>`;
+  const catTag = (cat && role === 'bot') ? `<div class="cat-tag">${cat}</div>` : '';
+  d.innerHTML = av + `<div>${catTag}<div class="bub">${html}</div></div>`;
+  msgs.appendChild(d);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function addTyping() {
+  const msgs = document.getElementById('msgs');
+  const d = document.createElement('div');
+  d.className = 'msg bot'; d.id = 'typing';
+  d.innerHTML = `<div class="mavatar b"><i class="ti ti-robot"></i></div><div><div class="bub"><div class="typing"><span></span><span></span><span></span></div></div></div>`;
+  msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  const el = document.getElementById('typing'); if (el) el.remove();
+}
+
+async function sendMsg() {
+  const inp = document.getElementById('inp');
+  const txt = inp.value.trim();
+  if (!txt || loading) return;
+  inp.value = ''; inp.style.height = 'auto';
+  loading = true;
+  document.getElementById('sbtn').disabled = true;
+  addMsg('user', esc(txt));
+  history.push({ role: 'user', content: txt });
+  addTyping();
+
+  const local = findAnswer(txt);
+  let kbContext = '';
+  if (local) {
+    kbContext = `\n\n[BASE DE CONNAISSANCES]\nCatégorie: ${local.cat}\nQ: ${local.q}\nR: ${local.a}\n\nUtilise cette réponse comme base, adapte-la si nécessaire.`;
+  }
+
+  try {
+    const msgs = history.map((m, i) =>
+      i === history.length - 1 && m.role === 'user'
+        ? { role: 'user', content: m.content + kbContext }
+        : m
+    );
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        system: SYSPROMPT,
+        messages: msgs
+      })
+    });
+    const data = await res.json();
+    removeTyping();
+    const reply = data.content?.map(b => b.text || '').join('') || 'Je suis désolée, une erreur est survenue.';
+    history.push({ role: 'assistant', content: reply });
+    addMsg('bot', fmt(reply), local ? local.cat : null);
+  } catch (e) {
+    removeTyping();
+    addMsg('bot', 'Erreur de connexion. Veuillez réessayer.', null);
+  }
+
+  loading = false;
+  document.getElementById('sbtn').disabled = false;
+  document.getElementById('inp').focus();
+}
+
+const SUGGEST_DB = {
+  'congé':[
+    'Combien de jours de congés payés ai-je droit par mois ?',
+    'Que se passe-t-il si je suis malade pendant mes congés ?',
+    'Quelle est la période de référence pour les congés chez Uniqlo ?'
+  ],
+  'conge':[
+    'Combien de jours de congés payés ai-je droit par mois ?',
+    'Que se passe-t-il si je suis malade pendant mes congés ?',
+    'Quelle est la période de référence pour les congés chez Uniqlo ?'
+  ],
+  'congés':[
+    'Combien de jours de congés payés ai-je droit par mois ?',
+    'Que se passe-t-il si je suis malade pendant mes congés ?',
+    'Quelle est la période de référence pour les congés chez Uniqlo ?'
+  ],
+  'rtt':[
+    'Comment sont calculés mes jours de RTT ?',
+    'Peut-on reporter ses RTT non pris ?',
+    'Comment poser un RTT chez Uniqlo ?'
+  ],
+  'salaire':[
+    'Quelle est la différence entre salaire brut et net ?',
+    'Quand est versé mon salaire chez Uniqlo ?',
+    'Comment demander une augmentation de salaire ?'
+  ],
+  'paie':[
+    'Comment lire ma fiche de paie ?',
+    'Comment contester une erreur sur ma fiche de paie ?',
+    'Qu\'est-ce que le net imposable sur mon bulletin ?'
+  ],
+  'bulletin':[
+    'Comment lire mon bulletin de paie ?',
+    'Qu\'est-ce que le net imposable ?',
+    'Comment contester une erreur sur mon bulletin ?'
+  ],
+  'maladie':[
+    'Comment déclarer un arrêt maladie chez Uniqlo ?',
+    'Combien de jours de carence en cas d\'arrêt maladie ?',
+    'Mon salaire est-il maintenu pendant un arrêt maladie ?'
+  ],
+  'arrêt':[
+    'Comment déclarer un arrêt de travail ?',
+    'Que se passe-t-il si je suis en arrêt longue durée ?',
+    'Puis-je poser des congés pendant un arrêt maladie ?'
+  ],
+  'accident':[
+    'Qu\'est-ce qu\'un accident du travail ?',
+    'Comment déclarer un accident du travail ?',
+    'Quelles indemnités en cas d\'accident du travail ?'
+  ],
+  'contrat':[
+    'Quelle est la durée de la période d\'essai pour un CDI ?',
+    'Comment fonctionne un avenant au contrat ?',
+    'Peut-on modifier mon lieu de travail sans mon accord ?'
+  ],
+  'cdi':[
+    'Qu\'est-ce qu\'un CDI ?',
+    'Quelle est la durée de la période d\'essai en CDI ?',
+    'Quelles sont mes obligations en CDI ?'
+  ],
+  'cdd':[
+    'Quelle est la durée maximale d\'un CDD ?',
+    'Ai-je droit à une prime de fin de CDD ?',
+    'Un CDD peut-il être transformé en CDI ?'
+  ],
+  'période d\'essai':[
+    'Quelle est la durée de la période d\'essai pour un employé ?',
+    'Peut-on renouveler une période d\'essai ?',
+    'Que se passe-t-il si la période d\'essai est rompue ?'
+  ],
+  'démission':[
+    'Quel est le délai de préavis pour une démission ?',
+    'Comment rédiger une lettre de démission ?',
+    'Ai-je droit au chômage après une démission ?'
+  ],
+  'rupture':[
+    'Comment se déroule une rupture conventionnelle ?',
+    'Quelles indemnités pour une rupture conventionnelle ?',
+    'Ai-je droit aux allocations chômage après une rupture conventionnelle ?'
+  ],
+  'licenciement':[
+    'Quels sont les motifs valables de licenciement ?',
+    'Combien vaut mon indemnité légale de licenciement ?',
+    'Comment se déroule l\'entretien préalable au licenciement ?'
+  ],
+  'préavis':[
+    'Quelle est la durée de mon préavis en cas de démission ?',
+    'L\'employeur peut-il me dispenser de préavis ?',
+    'Mon préavis est-il rémunéré ?'
+  ],
+  'cpf':[
+    'Comment utiliser mon CPF ?',
+    'Combien d\'euros accumule-t-on par an sur le CPF ?',
+    'Puis-je utiliser mon CPF pendant mes heures de travail ?'
+  ],
+  'formation':[
+    'Comment s\'inscrire à une formation chez Uniqlo ?',
+    'Qu\'est-ce que le plan de développement des compétences ?',
+    'Puis-je me former pendant mes heures de travail ?'
+  ],
+  'mutuelle':[
+    'Comment adhérer à la mutuelle Uniqlo ?',
+    'Comment me faire rembourser des soins ?',
+    'Qu\'est-ce que la portabilité de la mutuelle après mon départ ?'
+  ],
+  'remboursement':[
+    'Comment me faire rembourser mes soins ?',
+    'Quel est le taux de remboursement de la mutuelle ?',
+    'Comment fonctionne le tiers payant ?'
+  ],
+  'retraite':[
+    'À quel âge puis-je partir à la retraite ?',
+    'Combien de trimestres faut-il pour une retraite à taux plein ?',
+    'Comment consulter mon relevé de carrière ?'
+  ],
+  'prime':[
+    'Qu\'est-ce que la prime d\'ancienneté chez Uniqlo ?',
+    'Le 13e mois existe-t-il chez Uniqlo ?',
+    'Qu\'est-ce que l\'intéressement et la participation ?'
+  ],
+  'pee':[
+    'Comment fonctionne le PEE chez Uniqlo ?',
+    'Quels sont les cas de déblocage anticipé du PEE ?',
+    'Comment consulter mon épargne salariale ?'
+  ],
+  'télétravail':[
+    'Ai-je le droit au télétravail chez Uniqlo ?',
+    'Quels frais sont remboursés en télétravail ?',
+    'Qu\'est-ce que le droit à la déconnexion ?'
+  ],
+  'transport':[
+    'Quelle est la prise en charge du transport par Uniqlo ?',
+    'Comment obtenir le remboursement de mon abonnement ?',
+    'Ai-je droit à une indemnité vélo ?'
+  ],
+  'heures':[
+    'Comment sont calculées les heures supplémentaires ?',
+    'Puis-je refuser des heures supplémentaires ?',
+    'Quelle est la durée légale du travail par semaine ?'
+  ],
+  'smic':[
+    'Quel est le montant du SMIC en 2024 ?',
+    'Mon salaire peut-il être inférieur au SMIC ?',
+    'Comment le SMIC est-il revalorisé ?'
+  ],
+  'handicap':[
+    'Qu\'est-ce que la RQTH ?',
+    'Quels avantages la RQTH apporte-t-elle ?',
+    'Comment faire une demande de RQTH ?'
+  ],
+  'harcelement':[
+    'Que faire en cas de harcèlement moral au travail ?',
+    'Que faire en cas de harcèlement sexuel ?',
+    'Suis-je protégé si je signale un harcèlement ?'
+  ],
+  'harcèlement':[
+    'Que faire en cas de harcèlement moral au travail ?',
+    'Que faire en cas de harcèlement sexuel ?',
+    'Suis-je protégé si je signale un harcèlement ?'
+  ],
+  'burn-out':[
+    'Que faire en cas de burn-out ?',
+    'Le burn-out peut-il être reconnu comme maladie professionnelle ?',
+    'Qui contacter en cas d\'épuisement professionnel ?'
+  ],
+  'maternité':[
+    'Quelle est la durée du congé maternité ?',
+    'Mon salaire est-il maintenu pendant le congé maternité ?',
+    'Quand prévenir Uniqlo de ma grossesse ?'
+  ],
+  'paternité':[
+    'Quelle est la durée du congé paternité ?',
+    'Le congé paternité est-il obligatoire ?',
+    'Comment déclarer mon congé paternité à la RH ?'
+  ],
+  'discrimination':[
+    'Que faire en cas de discrimination au travail ?',
+    'Qui contacter pour signaler une discrimination ?',
+    'Quelles sont les sanctions en cas de discrimination ?'
+  ],
+  'cse':[
+    'Qu\'est-ce que le CSE chez Uniqlo ?',
+    'Comment contacter mes représentants du personnel ?',
+    'Quelles sont les missions du CSE ?'
+  ]
+};
+
+let currentSuggestions = [];
+
+function onInput(val) {
+  const v = val.toLowerCase().trim();
+  const box = document.getElementById('suggest-box');
+  if (v.length < 3) { box.classList.remove('visible'); return; }
+
+  let found = null;
+  for (const kw of Object.keys(SUGGEST_DB)) {
+    if (v.includes(kw)) { found = kw; break; }
+  }
+
+  if (!found) { box.classList.remove('visible'); return; }
+
+  currentSuggestions = SUGGEST_DB[found];
+  currentSuggestions.forEach((q, i) => {
+    const el = document.getElementById('sug' + i);
+    if (el) el.querySelector('span').textContent = q;
+  });
+  box.classList.add('visible');
+}
+
+function useSuggest(i) {
+  const q = currentSuggestions[i];
+  if (!q) return;
+  document.getElementById('suggest-box').classList.remove('visible');
+  document.getElementById('inp').value = q;
+  sendMsg();
+}
+</script>
+</body>
+</html>
