@@ -1,0 +1,472 @@
+[
+  {
+    "q": "combien de jours de congés payés ai-je droit",
+    "a": "En France, tout salarié a droit à **2,5 jours ouvrables** par mois de travail effectif, soit **30 jours ouvrables** (5 semaines) pour une année complète. Chez Uniqlo, la période de référence va du 1er juin au 31 mai. Les congés doivent être pris avant le 31 mai de l'année N+1, sauf accord de report.",
+    "cat": "Congés"
+  },
+  {
+    "q": "comment calculer mon solde de congés",
+    "a": "Votre solde = jours acquis − jours pris. L'acquisition est de **2,5 jours/mois**. Exemple : après 8 mois = 20 jours acquis. Si vous avez pris 12 jours, il vous reste **8 jours**. Ce solde est visible sur votre bulletin de paie dans la rubrique 'Compteur CP'.",
+    "cat": "Congés"
+  },
+  {
+    "q": "qu'est-ce qu'un RTT",
+    "a": "Le RTT (Réduction du Temps de Travail) compense les heures travaillées au-delà de 35h/semaine. Si vous êtes à **37h/semaine**, vous accumulez 2h de RTT par semaine. Le nombre de jours RTT par an dépend de votre accord d'entreprise ou de forfait. Chez Uniqlo, il est précisé dans votre contrat.",
+    "cat": "Congés"
+  },
+  {
+    "q": "comment poser des congés",
+    "a": "Pour poser des congés chez Uniqlo :\n1. Déposez votre demande sur le **portail RH Uniqlo** (MyHR) avec un délai minimum de **2 semaines** pour moins de 5 jours, **1 mois** au-delà\n2. Votre manager valide ou refuse\n3. En cas de refus, il doit motiver sa décision\nL'accord collectif Uniqlo peut prévoir des périodes de pose obligatoire.",
+    "cat": "Congés"
+  },
+  {
+    "q": "peut-on reporter ses congés sur l'année suivante",
+    "a": "En principe **non** : les congés non pris avant le 31 mai sont perdus (sauf maladie ou maternité). Des exceptions existent : accord de report écrit du manager, alimentation du **Compte Épargne-Temps (CET)** si l'entreprise en dispose, ou report légal en cas d'arrêt maladie (C. trav. L3141-19).",
+    "cat": "Congés"
+  },
+  {
+    "q": "que se passe-t-il en cas d'arrêt maladie pendant les congés",
+    "a": "Si vous tombez malade **pendant** vos congés payés, vous pouvez les reporter grâce à l'arrêt de travail. Envoyez votre arrêt sous **48h** à la RH et à la CPAM. Les jours d'absence maladie ne sont pas décomptés de vos CP ; ils seront reportés après votre guérison (CJUE C-194/12).",
+    "cat": "Congés"
+  },
+  {
+    "q": "combien de jours pour un décès dans la famille",
+    "a": "Les congés pour événements familiaux prévoient :\n- Conjoint/enfant : **5 jours**\n- Parent (père/mère) : **3 jours**\n- Frère/sœur : **3 jours**\n- Beau-parent : **3 jours**\n- Grands-parents : **1 jour**\nCes jours sont rémunérés et ne s'imputent pas sur les CP.",
+    "cat": "Congés"
+  },
+  {
+    "q": "qu'est-ce que le congé maternité",
+    "a": "Le congé maternité est obligatoire et indemnisé par la CPAM. Durée standard :\n- **1er/2e enfant** : 6 semaines avant + 10 semaines après = 16 semaines\n- **3e enfant et +** : 8 semaines avant + 18 semaines après = 26 semaines\nL'indemnité = moyenne des 3 derniers salaires bruts (plafonnée).",
+    "cat": "Congés"
+  },
+  {
+    "q": "qu'est-ce que le congé paternité",
+    "a": "Le congé paternité dure **25 jours calendaires** (32 pour naissances multiples), incluant 4 jours obligatoires juste après la naissance. Il est indemnisé par la CPAM. Il doit être pris dans les **6 mois** suivant la naissance. Prévenez la RH Uniqlo au moins **1 mois** à l'avance.",
+    "cat": "Congés"
+  },
+  {
+    "q": "congé sans solde comment ça marche",
+    "a": "Le congé sans solde est une absence non rémunérée accordée par l'employeur. Il n'est pas un droit automatique (sauf congé sabbatique après 6 ans d'ancienneté). Déposez votre demande écrite à la RH avec le motif. Durée et conditions sont négociées. Votre contrat est suspendu.",
+    "cat": "Congés"
+  },
+  {
+    "q": "comment lire ma fiche de paie",
+    "a": "Votre bulletin de paie comporte :\n- **En-tête** : identité employeur/salarié, période, emploi, coefficient\n- **Brut** : salaire de base + heures supp + primes\n- **Cotisations salariales** : Sécu, retraite, chômage, mutuelle (déduites du brut)\n- **Net imposable** : brut − cotisations exonérées\n- **Net à payer** : ce que vous recevez\n- **Compteurs** : CP acquis/pris, heures supp, RTT",
+    "cat": "Paie"
+  },
+  {
+    "q": "quelle est la différence entre salaire brut et net",
+    "a": "- **Brut** : rémunération avant déductions = salaire de base + primes + avantages\n- **Charges salariales** : environ 22-25% du brut (Sécu, retraite, chômage, CSG/CRDS)\n- **Net à payer** : brut − charges salariales ≈ **75-78% du brut**\n- **Net imposable** : net à payer + CSG/CRDS non déductibles ≈ 98,25% du net\nExemple : 2 000€ brut → ≈ 1 550€ net.",
+    "cat": "Paie"
+  },
+  {
+    "q": "c'est quoi le net imposable",
+    "a": "Le **net imposable** est la base de calcul de votre impôt sur le revenu. Il est indiqué en bas de votre bulletin. Il correspond à votre **net à payer + réintégration de la CSG/CRDS non déductible** (2,4% du brut). C'est ce montant que vous déclarez aux impôts, pas le net à payer.",
+    "cat": "Paie"
+  },
+  {
+    "q": "comment sont calculées les heures supplémentaires",
+    "a": "Les heures supplémentaires (au-delà de 35h/semaine) sont majorées :\n- **25%** pour les 8 premières heures supp (de la 36e à la 43e)\n- **50%** au-delà\nElles peuvent être remplacées par un repos compensateur équivalent. Elles figurent sur votre bulletin.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que la CSG et la CRDS",
+    "a": "- **CSG** (Contribution Sociale Généralisée) : 9,2% du salaire brut (6,8% déductible + 2,4% non déductible)\n- **CRDS** (Contribution Remboursement Dette Sociale) : 0,5% du brut, non déductible\nElles financent la Sécurité Sociale et s'appliquent sur 98,25% du salaire brut.",
+    "cat": "Paie"
+  },
+  {
+    "q": "quand est versé le salaire chez uniqlo",
+    "a": "Le salaire Uniqlo est versé le **dernier jour ouvré du mois**. En cas de jour férié, il est anticipé. Le virement est effectué via la banque partenaire. Votre bulletin dématérialisé est disponible sur **MyHR** 2 jours avant le virement.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que la prime d'ancienneté",
+    "a": "La prime d'ancienneté récompense la fidélité. Dans le secteur commerce, elle représente généralement **1% par an d'ancienneté** appliqué sur le salaire minimum de branche. Elle figure sur votre bulletin en rubrique 'Prime ancienneté'.",
+    "cat": "Paie"
+  },
+  {
+    "q": "comment est calculée ma cotisation retraite",
+    "a": "Vos cotisations retraite comprennent :\n- **Retraite base Sécu** : 6,9% salarié + 8,55% employeur (sur salaire ≤ plafond SS)\n- **Retraite complémentaire Agirc-Arrco** : environ 3,15% salarié (tranche 1)\nCes cotisations vous ouvrent des droits à la retraite. Consultez votre relevé sur lassuranceretraite.fr.",
+    "cat": "Paie"
+  },
+  {
+    "q": "13e mois chez uniqlo existe-t-il",
+    "a": "Le 13e mois n'est pas légalement obligatoire. S'il existe chez Uniqlo France, il est prévu dans votre **contrat de travail ou accord collectif**. S'il est prévu, il est généralement versé en **novembre ou décembre** et soumis aux cotisations normales.",
+    "cat": "Paie"
+  },
+  {
+    "q": "comment contester ma fiche de paie",
+    "a": "Si vous constatez une erreur :\n1. Signalez-la **par écrit** (email) au service paie dans le mois suivant\n2. Précisez la ligne, le montant attendu et le justificatif\n3. La correction sera sur le **bulletin suivant** avec régularisation rétroactive\n4. En cas de litige persistant, saisissez le **Conseil de Prud'hommes** (délai 3 ans pour les salaires).",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce qu'un CDI",
+    "a": "Le CDI (Contrat à Durée Indéterminée) est la forme normale du contrat de travail (C. trav. L1221-2). Il n'a pas de terme fixé, offre la stabilité de l'emploi et tous les droits légaux. La rupture nécessite une procédure formelle (licenciement, démission, rupture conventionnelle).",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce qu'un CDD",
+    "a": "Le CDD est exceptionnel et doit répondre à un motif précis (remplacement, surcroît d'activité, emploi saisonnier). Durée maximale **18 mois** (renouvellements inclus). À terme, le salarié a droit à une **indemnité de fin de contrat de 10%** du brut total.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "quelle est la durée de la période d'essai",
+    "a": "Durée légale maximale (renouvellement inclus) :\n- **Ouvrier/Employé** : 2 mois (+ 2 mois)\n- **Agent de maîtrise/Technicien** : 3 mois (+ 3 mois)\n- **Cadre** : 4 mois (+ 4 mois)\nLa convention collective ou le contrat peut prévoir des durées inférieures.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment se déroule la rupture conventionnelle",
+    "a": "La rupture conventionnelle (C. trav. L1237-11) permet de rompre d'un commun accord :\n1. **Entretien(s)** de négociation\n2. **Signature** de la convention (CERFA)\n3. **Délai de rétractation** : 15 jours calendaires\n4. **Homologation** par la DREETS : 15 jours ouvrables\n5. Versement de l'**indemnité spécifique** (≥ indemnité légale de licenciement)\nVous ouvrez droit aux **allocations chômage** (ARE).",
+    "cat": "Contrat"
+  },
+  {
+    "q": "quel est le délai de préavis pour une démission",
+    "a": "Le délai de préavis de démission dépend de votre catégorie :\n- **Employé** : 1 mois\n- **Agent de maîtrise** : 1 à 2 mois selon convention\n- **Cadre** : 3 mois\nLa démission doit être notifiée **par écrit** (LRAR recommandée). L'employeur peut dispenser de préavis (mais doit le payer).",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que la clause de non-concurrence",
+    "a": "La clause de non-concurrence est valide si elle est **limitée dans le temps** (souvent 1-2 ans), **géographiquement**, à un **secteur défini**, et si elle prévoit une **contrepartie financière** (≥ 30% du salaire brut moyen selon jurisprudence). Vérifiez votre contrat.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment fonctionne un avenant au contrat",
+    "a": "L'avenant modifie un ou plusieurs éléments du CDI (salaire, poste, lieu, temps de travail). Il doit être **signé par les deux parties**. Pour un élément essentiel (salaire, fonctions), le salarié peut refuser. Gardez toujours un exemplaire.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le solde de tout compte",
+    "a": "Le solde de tout compte récapitule les sommes versées à la fin : dernier salaire, indemnités CP, indemnité de rupture. Vous avez **6 mois** pour le contester par LRAR. Signez-le, mais sous réserve si vous avez des doutes.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "quels documents reçois-je à la fin du contrat",
+    "a": "À la rupture du contrat, l'employeur doit remettre :\n- **Certificat de travail** (mention poste, dates)\n- **Attestation France Travail** (pour chômage)\n- **Solde de tout compte** (récapitulatif)\n- **Dernier bulletin de paie**\nCes documents sont obligatoires (C. trav. L1234-19).",
+    "cat": "Contrat"
+  },
+  {
+    "q": "peut-on modifier mon lieu de travail sans accord",
+    "a": "Une clause de mobilité dans le contrat permet à l'employeur de modifier le lieu. Sans clause, un changement hors secteur géographique est une modification du contrat nécessitant votre accord.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le télétravail et quels sont mes droits",
+    "a": "Le télétravail doit être prévu par accord collectif ou charte. Le salarié ne peut être contraint au télétravail sans son accord (sauf circonstances exceptionnelles). L'employeur doit prendre en charge les coûts liés (forfait télétravail ≈ 2,5€/jour, exonéré de charges). Droit à la déconnexion applicable.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment utiliser mon CPF",
+    "a": "Le Compte Personnel de Formation (CPF) est accessible sur **moncompteformation.gouv.fr**. Vous accumulez **500€/an** (800€ pour les peu qualifiés), plafonné à 5 000€. Pour l'utiliser :\n1. Connectez-vous avec France Connect\n2. Recherchez la formation éligible\n3. Demandez votre formation (accord employeur si pendant les heures de travail)",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce que le plan de développement des compétences",
+    "a": "Le Plan de Développement des Compétences est élaboré par Uniqlo. Les formations obligatoires (sécurité, habilitations) sont à 100% à la charge d'Uniqlo. Consultez votre manager ou la RH pour connaître les formations planifiées.",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce qu'un bilan de compétences",
+    "a": "Le bilan de compétences (24h max) permet d'analyser vos aptitudes, motivations et de définir un projet professionnel. Il est réalisé par un organisme agréé, financé via le **CPF**. Vous pouvez en faire la demande sans l'accord de l'employeur si hors temps de travail. Résultats confidentiels.",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce que la VAE",
+    "a": "La Validation des Acquis de l'Expérience (VAE) permet d'obtenir un diplôme ou titre professionnel grâce à votre expérience (minimum 1 an). Elle est financée par le CPF ou par Uniqlo. Délai moyen : 12-18 mois.",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce que l'entretien professionnel",
+    "a": "L'entretien professionnel est **obligatoire** tous les 2 ans (C. trav. L6315-1). Il porte sur les perspectives d'évolution professionnelle (formation, qualification, emploi). Tous les 6 ans, un bilan récapitulatif est établi. Si l'employeur ne l'organise pas, il doit abonder le CPF de 3 000€.",
+    "cat": "Formation"
+  },
+  {
+    "q": "peut-on se former pendant les heures de travail",
+    "a": "Oui, pour les formations inscrites au **Plan de Développement des Compétences d'Uniqlo** : elles se font pendant le temps de travail, rémunéré normalement. Pour une formation CPF hors plan Uniqlo, l'accord du manager est requis si pendant les heures de travail.",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce que la Pro-A",
+    "a": "La Pro-A (Promotion ou Reconversion par l'Alternance) permet aux salariés en CDI (peu qualifiés ou en reconversion) de suivre une formation en alternance pour changer de métier ou évoluer. Elle est cofinancée par Uniqlo et l'OPCO. La formation dure 6 à 24 mois.",
+    "cat": "Formation"
+  },
+  {
+    "q": "comment s'inscrire à une formation chez uniqlo",
+    "a": "Pour demander une formation :\n1. Parlez-en lors de votre **entretien annuel** ou à votre manager\n2. Faites une demande écrite à la RH via le portail **MyHR Uniqlo**\n3. La RH étudie la faisabilité et le financement\n4. Validation et inscription par le service formation\nDélai de réponse : 30 jours maximum.",
+    "cat": "Formation"
+  },
+  {
+    "q": "quelle est la mutuelle chez uniqlo",
+    "a": "Uniqlo propose une mutuelle collective obligatoire conforme à l'ANI. Elle couvre au minimum 100% de la base de remboursement Sécu pour les soins courants. La part employeur est d'au moins **50% de la cotisation**. Les détails (garanties, tarifs) sont dans votre notice d'information mutuelle.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "comment adhérer à la mutuelle",
+    "a": "L'adhésion est **obligatoire** sauf cas de dispense légaux (déjà couvert par mutuelle conjoint, bénéficiaire de la CSS, CDD < 3 mois, apprentis). Si vous bénéficiez d'une dispense, remettez un justificatif à la RH dans les **30 jours** suivant l'embauche.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "qu'est-ce que la portabilité de la mutuelle",
+    "a": "À la fin du contrat (sauf démission sans motif légitime), vous pouvez conserver votre mutuelle **gratuitement** pendant une durée égale à votre ancienneté, plafonnée à **12 mois**. Il faut s'inscrire à France Travail. La portabilité cesse si vous retrouvez un emploi.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "comment se faire rembourser des soins",
+    "a": "Les remboursements fonctionnent en 2 temps :\n1. **Sécurité Sociale** : rembourse la base (ex : 70% du tarif de convention)\n2. **Mutuelle** : prend en charge tout ou partie du reste à charge\nSi votre médecin est en **réseau de soins** de la mutuelle, le tiers payant s'applique.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "qu'est-ce que la prévoyance",
+    "a": "La prévoyance complémentaire couvre les risques lourds :\n- **Incapacité de travail** : maintien de revenu en arrêt maladie/accident\n- **Invalidité** : rente si vous êtes reconnu invalide\n- **Décès** : capital versé à vos bénéficiaires\nUniqlo finance en partie la prévoyance. Le détail est dans la **notice prévoyance** remise à l'embauche.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "comment déclarer un arrêt de travail",
+    "a": "En cas d'arrêt maladie :\n1. Consultez un médecin le plus tôt possible\n2. Envoyez les volets 1 et 2 de l'arrêt à la **CPAM** sous **48h**\n3. Envoyez le volet 3 à la **RH Uniqlo** sous **48h**\n4. Un **délai de carence de 3 jours** s'applique (sauf accident du travail)\nUniqlo peut prévoir un maintien de salaire selon ancienneté.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "qu'est-ce qu'un accident du travail",
+    "a": "L'accident du travail (AT) est un accident survenu par le fait ou à l'occasion du travail. Il ouvre droit à des IJSS majorées (60% puis 80% du salaire, sans délai de carence). Déclarez-le à la RH **immédiatement**, qui l'envoie à la CPAM sous **48h**.",
+    "cat": "Mutuelle"
+  },
+  {
+    "q": "qu'est-ce que le PEE chez uniqlo",
+    "a": "Le Plan d'Épargne Entreprise (PEE) permet d'épargner sur 5 ans minimum avec un avantage fiscal. Uniqlo peut abonder vos versements volontaires. À l'issue de 5 ans, vous récupérez capital + intérêts, exonérés d'impôt (mais soumis aux prélèvements sociaux).",
+    "cat": "Épargne"
+  },
+  {
+    "q": "quels sont les cas de déblocage anticipé du PEE",
+    "a": "Le déblocage anticipé du PEE est possible en cas de :\n- Mariage ou PACS\n- Naissance ou adoption d'un 3e enfant\n- Divorce avec garde d'enfant\n- Invalidité (salarié, conjoint, enfant)\n- Décès (salarié ou conjoint)\n- Rupture du contrat de travail\n- Création ou reprise d'entreprise\n- Acquisition de la résidence principale\nFaire la demande dans les 6 mois de l'événement.",
+    "cat": "Épargne"
+  },
+  {
+    "q": "qu'est-ce que l'intéressement",
+    "a": "L'intéressement est une prime collective liée aux résultats ou performances d'Uniqlo. Son montant varie selon les résultats. Il peut être versé en espèces (imposable) ou placé sur le PEE (exonéré d'impôt si bloqué 5 ans). Versé dans les **5 mois** suivant la clôture de l'exercice.",
+    "cat": "Épargne"
+  },
+  {
+    "q": "qu'est-ce que la participation",
+    "a": "La participation est obligatoire pour les entreprises de +50 salariés. Elle distribue une partie des bénéfices aux salariés selon une formule légale. Elle est bloquée **5 ans** par défaut. Elle est exonérée d'impôt si bloquée.",
+    "cat": "Épargne"
+  },
+  {
+    "q": "comment consulter mon épargne salariale",
+    "a": "Votre épargne est accessible via le site de votre **gestionnaire d'épargne** (Amundi, Natixis ou BNP Épargne Salariale selon l'accord Uniqlo). Vous y trouvez : vos avoirs par plan (PEE, PERCOL), la composition des fonds, les performances et les options de déblocage.",
+    "cat": "Épargne"
+  },
+  {
+    "q": "qu'est-ce qu'un avertissement",
+    "a": "L'avertissement est la sanction disciplinaire la plus légère. Il est notifié **par écrit** et doit préciser les faits reprochés. Il reste dans votre dossier mais s'efface généralement après **3 ans** (jurisprudence). Vous pouvez le contester devant les Prud'hommes dans les **2 mois**.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "qu'est-ce que la mise à pied disciplinaire",
+    "a": "La mise à pied disciplinaire est une suspension temporaire du contrat avec retenue de salaire. Elle doit être précédée d'un **entretien préalable**. Sa durée doit être précisée dans le règlement intérieur. Vous pouvez la contester dans les **2 mois** devant les Prud'hommes.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "comment se déroule l'entretien préalable au licenciement",
+    "a": "Procédure obligatoire :\n1. **Convocation** par LRAR (délai min. 5 jours ouvrables avant l'entretien)\n2. La lettre mentionne l'objet, la date, le lieu et la possibilité d'être **assisté**\n3. L'**entretien** : l'employeur expose les motifs, vous vous expliquez\n4. **Notification** du licenciement par LRAR (min. 2 jours ouvrables après l'entretien)",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "qu'est-ce que la faute grave",
+    "a": "La faute grave rend impossible le maintien dans l'entreprise. Elle entraîne une **mise à pied conservatoire** immédiate et prive le salarié de l'indemnité de licenciement et de l'indemnité compensatrice de préavis. Exemples : vol, violence, harcèlement, insubordination caractérisée.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "peut-on être licencié sans motif",
+    "a": "Non. Tout licenciement doit reposer sur une **cause réelle et sérieuse** (C. trav. L1232-1). Un licenciement sans cause réelle est abusif : indemnité de 1 à 20 mois de salaire selon ancienneté (barème Macron). L'employeur doit prouver le motif.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "qu'est-ce que le délai de prescription en disciplinaire",
+    "a": "L'employeur dispose de **2 mois** pour engager une procédure disciplinaire à partir du jour où il a eu connaissance des faits (C. trav. L1332-4). Au-delà, la faute est prescrite. Un fait déjà sanctionné ne peut pas être sanctionné une seconde fois (**non bis in idem**).",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "puis-je être assisté lors d'un entretien disciplinaire",
+    "a": "Oui. Lors de tout entretien préalable, vous avez le droit d'être assisté par une **personne de votre choix appartenant au personnel** de l'entreprise (C. trav. L1332-2). S'il n'y a pas de représentants du personnel, vous pouvez faire appel à un **conseiller du salarié** extérieur (liste en Préfecture).",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "qu'est-ce que le harcèlement moral",
+    "a": "Le harcèlement moral (C. trav. L1152-1) est constitué par des agissements répétés qui dégradent les conditions de travail. Il est interdit et l'employeur doit le prévenir. Signalez tout cas à la RH, aux représentants du personnel ou à l'Inspection du travail.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "qu'est-ce que le droit à la déconnexion",
+    "a": "Le droit à la déconnexion (C. trav. L2242-17) garantit aux salariés le droit de ne pas être contactés hors des heures de travail. En pratique : aucune obligation de répondre aux emails/appels le soir, le week-end ou pendant les congés. En cas de non-respect, signalez à la RH.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que la visite médicale d'embauche",
+    "a": "La Visite d'Information et de Prévention (VIP) est réalisée par un infirmier de santé au travail dans les **3 mois** suivant l'embauche (avant pour les postes à risque). Elle n'est pas un contrôle d'aptitude mais un bilan de prévention.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "combien vaut mon indemnité légale de licenciement",
+    "a": "L'indemnité légale de licenciement (après 8 mois d'ancienneté) est de :\n- **1/4 de mois de salaire** par année d'ancienneté pour les 10 premières années\n- **1/3 de mois** par année au-delà de 10 ans\nBase de calcul : 1/12 de la rémunération brute des 12 derniers mois.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "quel est le SMIC en 2024",
+    "a": "Le SMIC au 1er janvier 2024 est de **11,65€ brut/heure** soit **1 766,92€ brut mensuel** pour 35h/semaine. Il est revalorisé chaque année au 1er janvier + revalorisation automatique si l'inflation dépasse 2%. Aucun salarié ne peut être rémunéré en dessous du SMIC.",
+    "cat": "Paie"
+  },
+  {
+    "q": "quelle est la durée légale du travail",
+    "a": "La durée légale est de **35 heures par semaine** (C. trav. L3121-27). Des dérogations existent :\n- Durée maximale quotidienne : **10h** (12h exceptionnellement)\n- Durée maximale hebdomadaire : **48h** (44h en moyenne sur 12 semaines)\n- Repos quotidien obligatoire : **11h consécutives**",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le forfait jour",
+    "a": "Le forfait annuel en jours s'applique aux cadres autonomes. Il fixe un nombre de jours travaillés/an (ex : 218 jours). En contrepartie, les durées maximales quotidiennes/hebdomadaires ne s'appliquent pas. Des entretiens réguliers sur la charge de travail sont obligatoires (C. trav. L3121-65).",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le CSE",
+    "a": "Le Comité Social et Économique (CSE) est l'instance unique de représentation du personnel. Il est obligatoire dans les entreprises de +11 salariés. Il a des attributions économiques, sociales et culturelles (activités ASC) et en matière de santé/sécurité.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment demander une augmentation de salaire",
+    "a": "Pour demander une augmentation chez Uniqlo :\n1. Préparez vos arguments : réalisations, valeur de marché, ancienneté\n2. Choisissez le bon moment : après un succès, lors de l'entretien annuel\n3. Proposez un montant précis et justifié\n4. Mettez-le par écrit si accord verbal\nLes augmentations générales sont négociées via la **NAO** (Négociation Annuelle Obligatoire).",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que la NAO",
+    "a": "La Négociation Annuelle Obligatoire (NAO) est une obligation légale pour toute entreprise ayant un délégué syndical. Elle porte sur les **salaires effectifs**, le temps de travail, et le partage de la valeur ajoutée. Les accords conclus s'appliquent à tous les salariés.",
+    "cat": "Paie"
+  },
+  {
+    "q": "quelles sont les conditions pour partir à la retraite",
+    "a": "Pour une retraite à taux plein, il faut remplir l'une des deux conditions :\n1. **Âge légal** (67 ans) : taux plein automatique\n2. **Trimestres requis** : 172 trimestres (43 ans) pour les générations nées après 1973\nL'âge minimum de départ est **64 ans** (réforme 2023). Des dispositifs de départ anticipé existent (carrière longue, pénibilité, handicap).",
+    "cat": "Paie"
+  },
+  {
+    "q": "comment déposer une réclamation RH",
+    "a": "Pour déposer une réclamation chez Uniqlo :\n1. Essayez d'abord de résoudre en direct avec votre manager\n2. Soumettez votre réclamation via le **portail MyHR** (onglet 'Réclamation')\n3. La RH dispose de **15 jours ouvrés** pour répondre\n4. En cas d'insatisfaction : saisir les représentants du personnel (CSE)\n5. Ultime recours : Inspection du travail ou Conseil de Prud'hommes",
+    "cat": "Général"
+  },
+  {
+    "q": "qu'est-ce que la prime de transport",
+    "a": "L'employeur doit prendre en charge **50% des abonnements de transport en commun** (Navigo, TER…) utilisés pour le trajet domicile-travail. Cette prise en charge est exonérée de charges. Présentez votre justificatif d'abonnement à la RH.",
+    "cat": "Paie"
+  },
+  {
+    "q": "quels avantages liés au travail le dimanche",
+    "a": "Dans le commerce de détail (dont Uniqlo), des accords prévoient généralement :\n- **Majoration de 30 à 100%** du salaire selon l'accord\n- **Repos compensateur**\nVérifiez votre accord d'établissement Uniqlo pour les modalités exactes applicables à votre magasin.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que le travail de nuit",
+    "a": "Est considéré comme travail de nuit toute heure entre **21h et 6h**. Le salarié 'travailleur de nuit' doit effectuer au moins 3h entre 21h et 6h, 2 fois/semaine. Contreparties obligatoires : repos compensateur et/ou majoration salariale selon accord. Surveillance médicale renforcée obligatoire.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que l'égalité professionnelle femmes hommes",
+    "a": "L'égalité professionnelle est une obligation légale (C. trav. L1142-1). Uniqlo doit garantir l'égalité de rémunération, d'accès à la formation, à la promotion et à l'embauche. L'index d'égalité (sur 100 points) est publié annuellement. Signalez toute discrimination à la RH ou à l'Inspection du travail.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le congé pour enfant malade",
+    "a": "Tout parent salarié peut s'absenter pour soigner un enfant malade de moins de **16 ans**. La durée est de **3 jours par an** (5 jours si < 1 an ou ≥ 3 enfants). Ce congé n'est pas obligatoirement rémunéré sauf accord d'entreprise.",
+    "cat": "Congés"
+  },
+  {
+    "q": "qu'est-ce que le compte épargne temps CET",
+    "a": "Le CET (Compte Épargne Temps) permet de stocker des jours de congés non pris, RTT, heures supp. Il est prévu par accord collectif chez Uniqlo. Les jours sont utilisables pour financer un congé long, la retraite progressive ou monétisés.",
+    "cat": "Congés"
+  },
+  {
+    "q": "quelle est la procédure pour une démission",
+    "a": "Pour démissionner chez Uniqlo :\n1. **Lettre de démission** remise en main propre contre décharge ou par LRAR\n2. La démission prend effet à **réception** de la lettre\n3. Le préavis démarre à ce moment\n4. À la fin : remise des documents de fin de contrat (certificat de travail, attestation France Travail, solde de tout compte)",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment fonctionne la médecine du travail",
+    "a": "Le médecin du travail (SPST) est indépendant et tenu au secret médical. Il réalise les visites d'embauche, périodiques et de reprise. Il peut proposer des aménagements de poste. Vous pouvez le consulter librement à votre demande. Son rôle est préventif, il ne traite pas.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que l'inaptitude au poste",
+    "a": "L'inaptitude est prononcée par le médecin du travail si votre état de santé ne vous permet plus d'occuper votre poste. L'employeur doit rechercher un **reclassement** sur un poste compatible. Si impossible ou si le salarié refuse, un licenciement pour inaptitude est possible avec versement d'indemnités légales.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment accéder à mon dossier personnel",
+    "a": "Tout salarié a le droit d'accéder à son dossier personnel (RGPD). Faites une demande écrite à la RH Uniqlo. Vous devez recevoir communication dans un **délai d'1 mois** (RGPD). Le dossier contient : contrat, avenants, entretiens, sanctions.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "que faire en cas de harcèlement sexuel",
+    "a": "Le harcèlement sexuel (C. trav. L1153-1) est strictement interdit. Si vous en êtes victime :\n1. Notez les faits avec dates et témoins\n2. Signalez-le à la **RH**, au **CSE** ou au **référent harcèlement** désigné par Uniqlo\n3. Déposez plainte auprès du **Procureur de la République** si nécessaire\nL'auteur s'expose à des sanctions disciplinaires et pénales. Vous êtes protégé contre les représailles.",
+    "cat": "Disciplinaire"
+  },
+  {
+    "q": "puis-je refuser des heures supplémentaires",
+    "a": "En principe, les heures supplémentaires s'imposent au salarié dans le contingent annuel (220h/an). Un refus systématique peut constituer une faute. Des raisons légitimes (motif familial impérieux, santé) peuvent justifier un refus ponctuel. Au-delà du contingent, le salarié peut refuser sans sanction.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le travail à temps partiel",
+    "a": "Le temps partiel est inférieur à 35h/semaine. La durée minimale légale est de **24h/semaine** (sauf exceptions : demande écrite du salarié, accord de branche). Les heures complémentaires sont possibles dans la limite de 1/10e et sont majorées de 10% au-delà.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment gérer une discrimination au travail",
+    "a": "Si vous pensez être victime de discrimination (âge, sexe, origine, handicap, religion...) :\n1. Rassemblez les éléments de preuve\n2. Signalez à la **RH Uniqlo** et au **CSE**\n3. Saisissez le **Défenseur des Droits** (gratuit, confidentiel)\n4. Déposez une plainte pénale (délai de prescription 5 ans)\nLa discrimination est une infraction pénale punie de 3 ans d'emprisonnement et 45 000€ d'amende.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "qu'est-ce que le PERCOL",
+    "a": "Le PERCOL (Plan d'Épargne Retraite Collectif) remplace le PERCO depuis 2019. Il permet d'épargner pour la retraite avec avantages fiscaux. Les versements sont déductibles du revenu imposable. Les sommes sont bloquées jusqu'à la retraite (sauf déblocage anticipé : achat résidence principale, décès, invalidité).",
+    "cat": "Épargne"
+  },
+  {
+    "q": "qu'est-ce que le chômage partiel",
+    "a": "Le chômage partiel (activité partielle) est un dispositif d'État permettant à Uniqlo de réduire ou suspendre l'activité en cas de difficultés. Vous percevez **70% de votre brut** (minimum SMIC). Le temps non travaillé ne s'impute pas sur vos congés.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que la reconnaissance de travailleur handicapé",
+    "a": "La RQTH (Reconnaissance de la Qualité de Travailleur Handicapé) est attribuée par la MDPH. Elle ouvre des droits : aménagement du poste, accès à l'obligation d'emploi. La démarche est **personnelle et confidentielle**. Uniqlo a l'obligation d'employer des travailleurs handicapés (6% des effectifs) ou de contribuer à l'AGEFIPH.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment signaler un problème de sécurité",
+    "a": "Signalez tout danger grave et imminent à votre manager immédiatement. Si le problème persiste :\n1. Alertez le **CSE/CSSCT** (Commission Santé Sécurité)\n2. Notifiez dans le **registre des dangers graves** (obligatoire)\n3. Exercez votre **droit de retrait** si risque immédiat pour votre santé\n4. Contactez l'**Inspection du Travail** (DREETS) en cas d'inaction",
+    "cat": "Contrat"
+  },
+  {
+    "q": "quelle est la procédure de licenciement économique",
+    "a": "Le licenciement économique (motif non inhérent à la personne du salarié) suit une procédure stricte :\n1. Consultation du CSE\n2. Entretien préalable + délai de réflexion\n3. Proposition du **Contrat de Sécurisation Professionnelle (CSP)** si < 1000 salariés\n4. Notification par LRAR\n5. Versement de l'indemnité légale (ou conventionnelle si plus favorable)\nDroit à la priorité de réembauche pendant 1 an.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "comment bénéficier de la formation liée à la pénibilité",
+    "a": "Si vous êtes exposé à des facteurs de risques (travail de nuit, postures pénibles, bruit, températures extrêmes...), vous accumulez des points sur votre **Compte Professionnel de Prévention (C2P)**. Ces points sont convertibles en :\n- Financement d'une formation\n- Réduction du temps de travail\n- Retraite anticipée\nConsultez votre compte sur **c2p.gouv.fr**.",
+    "cat": "Formation"
+  },
+  {
+    "q": "qu'est-ce que le ticket restaurant",
+    "a": "Les tickets restaurant (ou carte Swile/Edenred) sont un avantage facultatif. La part patronale est exonérée de charges dans la limite de **7,18€ par titre** (2024). Ils sont utilisables dans les restaurants et commerces alimentaires. Uniqlo précise les conditions dans votre contrat.",
+    "cat": "Paie"
+  },
+  {
+    "q": "comment consulter mon relevé de carrière",
+    "a": "Votre relevé de carrière recense tous vos trimestres validés et vos revenus cotisés. Consultez-le sur **lassuranceretraite.fr** (compte personnel) ou **info-retraite.fr** (vision inter-régimes). Signalez toute anomalie (trimestre manquant) à la caisse concernée.",
+    "cat": "Paie"
+  },
+  {
+    "q": "qu'est-ce que l'entretien annuel d'évaluation",
+    "a": "L'entretien annuel évalue votre performance, fixe les objectifs de l'année suivante et peut servir de base pour la revalorisation salariale. Il n'est pas légalement obligatoire mais prévu par accord Uniqlo. Préparez vos réalisations et vos souhaits d'évolution.",
+    "cat": "Contrat"
+  },
+  {
+    "q": "que faire en cas de burn-out",
+    "a": "En cas de burn-out ou d'épuisement professionnel :\n1. Consultez votre médecin traitant pour un **arrêt de travail** si nécessaire\n2. Contactez la **médecine du travail** pour un suivi adapté\n3. Informez la RH Uniqlo et votre manager\n4. Signalez les conditions de travail problématiques au **CSE**\nLe burn-out peut être reconnu comme **maladie professionnelle** dans certains cas. Vous pouvez aussi contacter l'**assistance psychologique** si Uniqlo en dispose.",
+    "cat": "Mutuelle"
+  }
+]
